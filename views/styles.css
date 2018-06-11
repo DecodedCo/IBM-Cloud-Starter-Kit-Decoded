@@ -1,51 +1,58 @@
-
-/* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-html,body{
+html, body{
   height: 100%;
 }
 
 body {
   text-align: center;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   padding: 1.5em;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
   color: white;
-  background-image: url("https://assets.decoded.com/images/external.jpg");
+  background-image: url("img/bg.jpg");
   background-size:cover;
-  background-position: bottom center;
+  background-position: center;
 }
 
 section {
   margin: 0 auto;
   position: relative;
   z-index: 10;
-  max-width: 600px;
-  background: rgba(254,248,0,0.9);
-  padding: 1.5em;
-  border-radius: 15px;
-  color: black;
-}
-
-p {
-  font-size: 1.1em;
+  max-width: 500px;
+  background: rgba(0,0,0,0.9);
+  padding: 2em;
+  border-radius: 5px;
+  color: white;
 }
 
 h1 {
-  font-size: 1.8em;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 i {
   font-size: 2em;
   margin-bottom: 0.5em;
+  color: white;
 }
+
+p.api {
+  color: yellow;
+}
+
 
 /* desktop styles only */
 @media (min-width:640px) {
@@ -58,20 +65,5 @@ i {
     margin-top: 15vh;
   }
   
-  button {
-    margin: 0.25em;
-    margin-top: 0.75em;
-  }
-  
 
-}
-/* desktop only styles end here */
-
-i.fa {
-  font-size:2em;
-  margin-bottom: 0.25em
-}
-
-p {
-  line-height: 1.5em;
 }
