@@ -1,5 +1,5 @@
 ---
 applications:
- - name: YourConceptName
+ - name: ChrisIsTestingAgain
    random-route: true
    memory: 256M
