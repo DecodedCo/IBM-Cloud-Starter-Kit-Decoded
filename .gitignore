@@ -1,2 +1,6 @@
 vcap-local.json
 node_modules
+.DS_Store
+views/.DS_Store
+views/img/.DS_Store
+views/js/.DS_Store
